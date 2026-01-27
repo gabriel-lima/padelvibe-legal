@@ -95,7 +95,7 @@ Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças s
 
 Para dúvidas sobre privacidade ou exercício de direitos:
 
-- **Email:** contato@padelvibe.com
+- **Email:** contato@padelvibe.app
 - **Dentro do app:** Perfil > Configurações > Privacidade
 
 ---

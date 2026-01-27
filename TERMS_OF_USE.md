@@ -132,7 +132,7 @@ Estes termos são regidos pelas leis brasileiras. Fica eleito o foro da comarca 
 ## 13. Contato
 
 Para dúvidas sobre estes termos:
-- **Email:** contato@padelvibe.com
+- **Email:** contato@padelvibe.app
 
 ---
 
