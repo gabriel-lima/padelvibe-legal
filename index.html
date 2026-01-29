@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos Legais - PadelVibe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FF9800;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #666;
+    }
+
+    .documents {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .document-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 24px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .document-link:hover {
+      background-color: #fff3e0;
+      border-color: #FF9800;
+    }
+
+    .document-icon {
+      width: 48px;
+      height: 48px;
+      background-color: #FF9800;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .document-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    .document-info {
+      flex: 1;
+    }
+
+    .document-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .document-description {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .arrow {
+      color: #999;
+      font-size: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #FF9800;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 16px;
+      }
+
+      .logo {
+        font-size: 28px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .document-link {
+        padding: 20px;
+      }
+
+      .document-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .document-title {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">PadelVibe</div>
+      <h1>Documentos Legais</h1>
+    </header>
+
+    <div class="documents">
+      <a href="PRIVACY_POLICY.html" class="document-link">
+        <div class="document-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+          </svg>
+        </div>
+        <div class="document-info">
+          <div class="document-title">Política de Privacidade</div>
+          <div class="document-description">Como coletamos e protegemos seus dados</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a href="TERMS_OF_USE.html" class="document-link">
+        <div class="document-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+          </svg>
+        </div>
+        <div class="document-info">
+          <div class="document-title">Termos de Uso</div>
+          <div class="document-description">Regras e condições de uso do aplicativo</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Dúvidas? Entre em contato: <a href="mailto:contato@padelvibe.app">contato@padelvibe.app</a>
+    </p>
+  </footer>
+</body>
+</html>
