@@ -1,109 +1,281 @@
-# Política de Privacidade - PadelVibe
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - PadelVibe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-**Última atualização:** Janeiro de 2025
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      padding: 0;
+    }
 
-O PadelVibe ("nós", "nosso" ou "aplicativo") está comprometido em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações pessoais.
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
 
----
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e5e5e5;
+    }
 
-## 1. Informações que Coletamos
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FF9800;
+      margin-bottom: 8px;
+    }
 
-### 1.1 Informações fornecidas por você
-- **Dados de cadastro:** nome, email, senha
-- **Dados de perfil:** foto, nível de jogo, cidade, biografia
-- **Conteúdo gerado:** posts, comentários, anúncios no marketplace
-- **Dados de eventos:** participação em eventos, resultados de partidas
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
 
-### 1.2 Informações coletadas automaticamente
-- **Dados de uso:** interações com o app, funcionalidades utilizadas
-- **Dados do dispositivo:** modelo, sistema operacional, identificadores únicos
-- **Dados de localização:** cidade (quando autorizado), para mostrar eventos próximos
+    .last-updated {
+      font-size: 14px;
+      color: #666;
+    }
 
-### 1.3 Informações de terceiros
-- **Login social:** se você usar login com Google ou Apple, recebemos seu nome e email conforme autorizado
+    .intro {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border-left: 4px solid #FF9800;
+    }
 
----
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #FF9800;
+    }
 
-## 2. Como Usamos suas Informações
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
 
-Utilizamos seus dados para:
-- Criar e gerenciar sua conta
-- Conectar você a outros jogadores de padel
-- Organizar e gerenciar eventos e torneios
-- Exibir anúncios relevantes no marketplace
-- Calcular rankings e estatísticas de jogo
-- Enviar notificações sobre eventos e atividades
-- Melhorar nossos serviços e experiência do usuário
-- Garantir a segurança da plataforma
+    p {
+      margin-bottom: 16px;
+      color: #333;
+    }
 
----
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
 
-## 3. Compartilhamento de Informações
+    li {
+      margin-bottom: 8px;
+      color: #333;
+    }
 
-**Compartilhamos seus dados apenas:**
-- **Com outros usuários:** seu perfil público, participação em eventos, posts
-- **Com organizadores de eventos:** informações necessárias para gestão do evento
-- **Por obrigação legal:** quando exigido por lei ou autoridades competentes
+    li strong {
+      color: #1a1a1a;
+    }
 
-**Não vendemos seus dados pessoais.**
+    .highlight {
+      background-color: #fff3e0;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
 
----
+    .highlight p {
+      margin-bottom: 0;
+    }
 
-## 4. Armazenamento e Segurança
+    .contact-box {
+      background-color: #f5f5f5;
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 24px;
+    }
 
-- Seus dados são armazenados em servidores seguros (Supabase/AWS)
-- Utilizamos criptografia para proteger dados sensíveis
-- Senhas são armazenadas com hash seguro (nunca em texto puro)
-- Acesso aos dados é restrito a pessoal autorizado
+    .contact-box p {
+      margin-bottom: 8px;
+    }
 
----
+    .contact-box a {
+      color: #FF9800;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-## 5. Seus Direitos
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
 
-Você tem direito a:
-- **Acessar** seus dados pessoais
-- **Corrigir** informações incorretas
-- **Excluir** sua conta e dados associados
-- **Exportar** seus dados em formato legível
-- **Revogar** consentimentos a qualquer momento
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e5;
+      text-align: center;
+    }
 
-Para exercer esses direitos, entre em contato conosco.
+    footer p {
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+    }
 
----
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px 60px;
+      }
 
-## 6. Retenção de Dados
+      h1 {
+        font-size: 26px;
+      }
 
-- Mantemos seus dados enquanto sua conta estiver ativa
-- Após exclusão da conta, dados são removidos em até 30 dias
-- Alguns dados podem ser retidos por obrigações legais
+      h2 {
+        font-size: 20px;
+      }
 
----
+      .intro {
+        font-size: 16px;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">PadelVibe</div>
+      <h1>Política de Privacidade</h1>
+      <p class="last-updated">Última atualização: Janeiro de 2025</p>
+    </header>
 
-## 7. Menores de Idade
+    <p class="intro">
+      O PadelVibe ("nós", "nosso" ou "aplicativo") está comprometido em proteger sua privacidade.
+      Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações pessoais.
+    </p>
 
-O PadelVibe não é destinado a menores de 13 anos. Não coletamos intencionalmente dados de crianças. Se tomarmos conhecimento de dados de menores, eles serão excluídos.
+    <h2>1. Informações que Coletamos</h2>
 
----
+    <h3>1.1 Informações fornecidas por você</h3>
+    <ul>
+      <li><strong>Dados de cadastro:</strong> nome, email, senha</li>
+      <li><strong>Dados de perfil:</strong> foto, nível de jogo, cidade, biografia</li>
+      <li><strong>Conteúdo gerado:</strong> posts, comentários, anúncios no marketplace</li>
+      <li><strong>Dados de eventos:</strong> participação em eventos, resultados de partidas</li>
+    </ul>
 
-## 8. Alterações nesta Política
+    <h3>1.2 Informações coletadas automaticamente</h3>
+    <ul>
+      <li><strong>Dados de uso:</strong> interações com o app, funcionalidades utilizadas</li>
+      <li><strong>Dados do dispositivo:</strong> modelo, sistema operacional, identificadores únicos</li>
+      <li><strong>Dados de localização:</strong> cidade (quando autorizado), para mostrar eventos próximos</li>
+    </ul>
 
-Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças significativas através do app ou por email.
+    <h3>1.3 Informações de terceiros</h3>
+    <ul>
+      <li><strong>Login social:</strong> se você usar login com Google ou Apple, recebemos seu nome e email conforme autorizado</li>
+    </ul>
 
----
+    <h2>2. Como Usamos suas Informações</h2>
+    <p>Utilizamos seus dados para:</p>
+    <ul>
+      <li>Criar e gerenciar sua conta</li>
+      <li>Conectar você a outros jogadores de padel</li>
+      <li>Organizar e gerenciar eventos e torneios</li>
+      <li>Exibir anúncios relevantes no marketplace</li>
+      <li>Calcular rankings e estatísticas de jogo</li>
+      <li>Enviar notificações sobre eventos e atividades</li>
+      <li>Melhorar nossos serviços e experiência do usuário</li>
+      <li>Garantir a segurança da plataforma</li>
+    </ul>
 
-## 9. Contato
+    <h2>3. Compartilhamento de Informações</h2>
+    <p><strong>Compartilhamos seus dados apenas:</strong></p>
+    <ul>
+      <li><strong>Com outros usuários:</strong> seu perfil público, participação em eventos, posts</li>
+      <li><strong>Com organizadores de eventos:</strong> informações necessárias para gestão do evento</li>
+      <li><strong>Por obrigação legal:</strong> quando exigido por lei ou autoridades competentes</li>
+    </ul>
+    <div class="highlight">
+      <p><strong>Não vendemos seus dados pessoais.</strong></p>
+    </div>
 
-Para dúvidas sobre privacidade ou exercício de direitos:
+    <h2>4. Armazenamento e Segurança</h2>
+    <ul>
+      <li>Seus dados são armazenados em servidores seguros (Supabase/AWS)</li>
+      <li>Utilizamos criptografia para proteger dados sensíveis</li>
+      <li>Senhas são armazenadas com hash seguro (nunca em texto puro)</li>
+      <li>Acesso aos dados é restrito a pessoal autorizado</li>
+    </ul>
 
-- **Email:** contato@padelvibe.app
-- **Dentro do app:** Perfil > Configurações > Privacidade
+    <h2>5. Seus Direitos</h2>
+    <p>Você tem direito a:</p>
+    <ul>
+      <li><strong>Acessar</strong> seus dados pessoais</li>
+      <li><strong>Corrigir</strong> informações incorretas</li>
+      <li><strong>Excluir</strong> sua conta e dados associados</li>
+      <li><strong>Exportar</strong> seus dados em formato legível</li>
+      <li><strong>Revogar</strong> consentimentos a qualquer momento</li>
+    </ul>
+    <p>Para exercer esses direitos, entre em contato conosco.</p>
 
----
+    <h2>6. Retenção de Dados</h2>
+    <ul>
+      <li>Mantemos seus dados enquanto sua conta estiver ativa</li>
+      <li>Após exclusão da conta, dados são removidos em até 30 dias</li>
+      <li>Alguns dados podem ser retidos por obrigações legais</li>
+    </ul>
 
-## 10. Legislação Aplicável
+    <h2>7. Menores de Idade</h2>
+    <p>
+      O PadelVibe não é destinado a menores de 13 anos. Não coletamos intencionalmente dados de crianças.
+      Se tomarmos conhecimento de dados de menores, eles serão excluídos.
+    </p>
 
-Esta política é regida pelas leis brasileiras, incluindo a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+    <h2>8. Alterações nesta Política</h2>
+    <p>
+      Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças significativas
+      através do app ou por email.
+    </p>
 
----
+    <h2>9. Contato</h2>
+    <p>Para dúvidas sobre privacidade ou exercício de direitos:</p>
+    <div class="contact-box">
+      <p><strong>Email:</strong> <a href="mailto:contato@padelvibe.app">contato@padelvibe.app</a></p>
+      <p><strong>Dentro do app:</strong> Perfil → Conta → Privacidade</p>
+    </div>
 
-*Ao usar o PadelVibe, você concorda com esta Política de Privacidade.*
+    <h2>10. Legislação Aplicável</h2>
+    <p>
+      Esta política é regida pelas leis brasileiras, incluindo a Lei Geral de Proteção de Dados
+      (LGPD - Lei nº 13.709/2018).
+    </p>
+
+    <footer>
+      <p>Ao usar o PadelVibe, você concorda com esta Política de Privacidade.</p>
+    </footer>
+  </div>
+</body>
+</html>
