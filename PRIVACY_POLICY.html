@@ -11,6 +11,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.7;
@@ -54,11 +58,55 @@
     .intro {
       font-size: 17px;
       color: #444;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
       padding: 20px;
       background-color: #f9f9f9;
       border-radius: 8px;
       border-left: 4px solid #FF9800;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background-color: #fafafa;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-list li {
+      margin: 0;
+    }
+
+    .toc-list a {
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .toc-list a:hover {
+      background-color: #fff3e0;
+      color: #FF9800;
     }
 
     h2 {
@@ -130,6 +178,25 @@
       text-decoration: underline;
     }
 
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 32px;
+      padding: 12px 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .back-to-top:hover {
+      background-color: #fff3e0;
+      color: #FF9800;
+    }
+
     footer {
       margin-top: 48px;
       padding-top: 24px;
@@ -160,12 +227,20 @@
         font-size: 16px;
         padding: 16px;
       }
+
+      .toc {
+        padding: 16px;
+      }
+
+      .toc-list {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="topo">
       <div class="logo">PadelVibe</div>
       <h1>Política de Privacidade</h1>
       <p class="last-updated">Última atualização: Janeiro de 2025</p>
@@ -176,7 +251,24 @@
       Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações pessoais.
     </p>
 
-    <h2>1. Informações que Coletamos</h2>
+    <!-- Table of Contents -->
+    <nav class="toc">
+      <div class="toc-title">Índice</div>
+      <ol class="toc-list">
+        <li><a href="#secao1">1. Informações que Coletamos</a></li>
+        <li><a href="#secao2">2. Como Usamos suas Informações</a></li>
+        <li><a href="#secao3">3. Compartilhamento de Informações</a></li>
+        <li><a href="#secao4">4. Armazenamento e Segurança</a></li>
+        <li><a href="#secao5">5. Seus Direitos</a></li>
+        <li><a href="#secao6">6. Retenção de Dados</a></li>
+        <li><a href="#secao7">7. Menores de Idade</a></li>
+        <li><a href="#secao8">8. Alterações nesta Política</a></li>
+        <li><a href="#secao9">9. Contato</a></li>
+        <li><a href="#secao10">10. Legislação Aplicável</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="secao1">1. Informações que Coletamos</h2>
 
     <h3>1.1 Informações fornecidas por você</h3>
     <ul>
@@ -198,7 +290,7 @@
       <li><strong>Login social:</strong> se você usar login com Google ou Apple, recebemos seu nome e email conforme autorizado</li>
     </ul>
 
-    <h2>2. Como Usamos suas Informações</h2>
+    <h2 id="secao2">2. Como Usamos suas Informações</h2>
     <p>Utilizamos seus dados para:</p>
     <ul>
       <li>Criar e gerenciar sua conta</li>
@@ -211,7 +303,7 @@
       <li>Garantir a segurança da plataforma</li>
     </ul>
 
-    <h2>3. Compartilhamento de Informações</h2>
+    <h2 id="secao3">3. Compartilhamento de Informações</h2>
     <p><strong>Compartilhamos seus dados apenas:</strong></p>
     <ul>
       <li><strong>Com outros usuários:</strong> seu perfil público, participação em eventos, posts</li>
@@ -222,7 +314,7 @@
       <p><strong>Não vendemos seus dados pessoais.</strong></p>
     </div>
 
-    <h2>4. Armazenamento e Segurança</h2>
+    <h2 id="secao4">4. Armazenamento e Segurança</h2>
     <ul>
       <li>Seus dados são armazenados em servidores seguros (Supabase/AWS)</li>
       <li>Utilizamos criptografia para proteger dados sensíveis</li>
@@ -230,7 +322,7 @@
       <li>Acesso aos dados é restrito a pessoal autorizado</li>
     </ul>
 
-    <h2>5. Seus Direitos</h2>
+    <h2 id="secao5">5. Seus Direitos</h2>
     <p>Você tem direito a:</p>
     <ul>
       <li><strong>Acessar</strong> seus dados pessoais</li>
@@ -241,37 +333,41 @@
     </ul>
     <p>Para exercer esses direitos, entre em contato conosco.</p>
 
-    <h2>6. Retenção de Dados</h2>
+    <h2 id="secao6">6. Retenção de Dados</h2>
     <ul>
       <li>Mantemos seus dados enquanto sua conta estiver ativa</li>
       <li>Após exclusão da conta, dados são removidos em até 30 dias</li>
       <li>Alguns dados podem ser retidos por obrigações legais</li>
     </ul>
 
-    <h2>7. Menores de Idade</h2>
+    <h2 id="secao7">7. Menores de Idade</h2>
     <p>
       O PadelVibe não é destinado a menores de 13 anos. Não coletamos intencionalmente dados de crianças.
       Se tomarmos conhecimento de dados de menores, eles serão excluídos.
     </p>
 
-    <h2>8. Alterações nesta Política</h2>
+    <h2 id="secao8">8. Alterações nesta Política</h2>
     <p>
       Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças significativas
       através do app ou por email.
     </p>
 
-    <h2>9. Contato</h2>
+    <h2 id="secao9">9. Contato</h2>
     <p>Para dúvidas sobre privacidade ou exercício de direitos:</p>
     <div class="contact-box">
       <p><strong>Email:</strong> <a href="mailto:contato@padelvibe.app">contato@padelvibe.app</a></p>
-      <p><strong>Dentro do app:</strong> Perfil → Conta → Privacidade</p>
+      <p><strong>Dentro do app:</strong> Perfil → Conta</p>
     </div>
 
-    <h2>10. Legislação Aplicável</h2>
+    <h2 id="secao10">10. Legislação Aplicável</h2>
     <p>
       Esta política é regida pelas leis brasileiras, incluindo a Lei Geral de Proteção de Dados
       (LGPD - Lei nº 13.709/2018).
     </p>
+
+    <a href="#topo" class="back-to-top">
+      ↑ Voltar ao topo
+    </a>
 
     <footer>
       <p>Ao usar o PadelVibe, você concorda com esta Política de Privacidade.</p>
