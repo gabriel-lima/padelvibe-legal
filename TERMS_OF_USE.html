@@ -11,6 +11,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.7;
@@ -54,11 +58,55 @@
     .intro {
       font-size: 17px;
       color: #444;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
       padding: 20px;
       background-color: #f9f9f9;
       border-radius: 8px;
       border-left: 4px solid #FF9800;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background-color: #fafafa;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-list li {
+      margin: 0;
+    }
+
+    .toc-list a {
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .toc-list a:hover {
+      background-color: #fff3e0;
+      color: #FF9800;
     }
 
     h2 {
@@ -146,6 +194,25 @@
       text-decoration: underline;
     }
 
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 32px;
+      padding: 12px 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .back-to-top:hover {
+      background-color: #fff3e0;
+      color: #FF9800;
+    }
+
     footer {
       margin-top: 48px;
       padding-top: 24px;
@@ -176,12 +243,20 @@
         font-size: 16px;
         padding: 16px;
       }
+
+      .toc {
+        padding: 16px;
+      }
+
+      .toc-list {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="topo">
       <div class="logo">PadelVibe</div>
       <h1>Termos de Uso</h1>
       <p class="last-updated">Última atualização: Janeiro de 2025</p>
@@ -192,13 +267,33 @@
       Leia-os atentamente.
     </p>
 
-    <h2>1. Aceitação dos Termos</h2>
+    <!-- Table of Contents -->
+    <nav class="toc">
+      <div class="toc-title">Índice</div>
+      <ol class="toc-list">
+        <li><a href="#secao1">1. Aceitação dos Termos</a></li>
+        <li><a href="#secao2">2. Descrição do Serviço</a></li>
+        <li><a href="#secao3">3. Cadastro e Conta</a></li>
+        <li><a href="#secao4">4. Regras de Conduta</a></li>
+        <li><a href="#secao5">5. Conteúdo do Usuário</a></li>
+        <li><a href="#secao6">6. Eventos e Torneios</a></li>
+        <li><a href="#secao7">7. Marketplace</a></li>
+        <li><a href="#secao8">8. Isenção de Responsabilidade</a></li>
+        <li><a href="#secao9">9. Propriedade Intelectual</a></li>
+        <li><a href="#secao10">10. Suspensão e Encerramento</a></li>
+        <li><a href="#secao11">11. Alterações nos Termos</a></li>
+        <li><a href="#secao12">12. Legislação e Foro</a></li>
+        <li><a href="#secao13">13. Contato</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="secao1">1. Aceitação dos Termos</h2>
     <p>
       Ao criar uma conta ou usar o PadelVibe, você concorda com estes termos.
       Se não concordar, não utilize o aplicativo.
     </p>
 
-    <h2>2. Descrição do Serviço</h2>
+    <h2 id="secao2">2. Descrição do Serviço</h2>
     <p>O PadelVibe é uma rede social para jogadores de padel que permite:</p>
     <ul>
       <li>Criar e participar de eventos e torneios</li>
@@ -208,7 +303,7 @@
       <li>Compartilhar conteúdo relacionado a padel</li>
     </ul>
 
-    <h2>3. Cadastro e Conta</h2>
+    <h2 id="secao3">3. Cadastro e Conta</h2>
 
     <h3>3.1 Elegibilidade</h3>
     <ul>
@@ -223,7 +318,7 @@
       <li>Notifique-nos imediatamente sobre uso não autorizado</li>
     </ul>
 
-    <h2>4. Regras de Conduta</h2>
+    <h2 id="secao4">4. Regras de Conduta</h2>
     <p>Ao usar o PadelVibe, você concorda em <strong>NÃO</strong>:</p>
     <div class="warning">
       <ul>
@@ -237,7 +332,7 @@
       </ul>
     </div>
 
-    <h2>5. Conteúdo do Usuário</h2>
+    <h2 id="secao5">5. Conteúdo do Usuário</h2>
 
     <h3>5.1 Propriedade</h3>
     <ul>
@@ -251,7 +346,7 @@
       <li>Conteúdo que viole estes termos pode ser removido</li>
     </ul>
 
-    <h2>6. Eventos e Torneios</h2>
+    <h2 id="secao6">6. Eventos e Torneios</h2>
 
     <h3>6.1 Organizadores</h3>
     <ul>
@@ -267,7 +362,7 @@
       <li>Aceitam os resultados registrados pelos organizadores</li>
     </ul>
 
-    <h2>7. Marketplace</h2>
+    <h2 id="secao7">7. Marketplace</h2>
 
     <h3>7.1 Anunciantes</h3>
     <ul>
@@ -282,7 +377,7 @@
       <li>O PadelVibe não intermedia pagamentos nem se responsabiliza por transações</li>
     </ul>
 
-    <h2>8. Isenção de Responsabilidade</h2>
+    <h2 id="secao8">8. Isenção de Responsabilidade</h2>
     <p>O PadelVibe:</p>
     <ul>
       <li>Não garante disponibilidade ininterrupta do serviço</li>
@@ -291,14 +386,14 @@
       <li>Não garante a veracidade de informações de terceiros</li>
     </ul>
 
-    <h2>9. Propriedade Intelectual</h2>
+    <h2 id="secao9">9. Propriedade Intelectual</h2>
     <ul>
       <li>O PadelVibe e sua marca são de nossa propriedade</li>
       <li>Você não pode copiar, modificar ou distribuir nosso software</li>
       <li>Respeitamos direitos autorais e esperamos o mesmo dos usuários</li>
     </ul>
 
-    <h2>10. Suspensão e Encerramento</h2>
+    <h2 id="secao10">10. Suspensão e Encerramento</h2>
     <p>Podemos suspender ou encerrar sua conta se você:</p>
     <ul>
       <li>Violar estes termos</li>
@@ -309,23 +404,27 @@
       <p>Você pode excluir sua conta a qualquer momento nas configurações do app.</p>
     </div>
 
-    <h2>11. Alterações nos Termos</h2>
+    <h2 id="secao11">11. Alterações nos Termos</h2>
     <p>
       Podemos modificar estes termos a qualquer momento. Mudanças significativas serão notificadas
       com antecedência. O uso continuado após alterações constitui aceitação.
     </p>
 
-    <h2>12. Legislação e Foro</h2>
+    <h2 id="secao12">12. Legislação e Foro</h2>
     <p>
       Estes termos são regidos pelas leis brasileiras. Fica eleito o foro da comarca de Joinville/SC
       para dirimir quaisquer disputas.
     </p>
 
-    <h2>13. Contato</h2>
+    <h2 id="secao13">13. Contato</h2>
     <p>Para dúvidas sobre estes termos:</p>
     <div class="contact-box">
       <p><strong>Email:</strong> <a href="mailto:contato@padelvibe.app">contato@padelvibe.app</a></p>
     </div>
+
+    <a href="#topo" class="back-to-top">
+      ↑ Voltar ao topo
+    </a>
 
     <footer>
       <p>Ao usar o PadelVibe, você confirma que leu, entendeu e concorda com estes Termos de Uso.</p>
